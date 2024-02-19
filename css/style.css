@@ -1,0 +1,422 @@
+.container {
+    max-width: 1460px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    width: 1440px;
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__inner img {
+    margin-right: 504px;
+}
+
+.header__inner ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__inner li:not(:last-child) {
+    margin-right: 94px;
+}
+
+.header__inner a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 175%;
+    letter-spacing: 0.01em;
+    color: #252b42;
+}
+
+.header__inner svg {
+    display: none;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 674px;
+}
+
+.text__content {
+    text-align: center;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 42px;
+    padding-top: 73px;
+}
+
+.text__content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #f6f6f6;
+    margin-bottom: 7px;
+}
+
+.text__content h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 138%;
+    color: #ffffff;
+    margin-bottom: 7px;
+}
+
+.text__content h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+    color: #f6f6f6;
+}
+
+.hero__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+.hero__buttons a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    width: 236px;
+    height: 68px;
+    padding: 16px 0px;
+    z-index: 1;
+}
+
+.hero img {
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+hr {
+    position: absolute;
+    bottom: -615px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E4E4E4;
+    width: 884px;
+    height: 3px;
+}
+
+/* App */
+.app {
+    width: 1440px;
+    padding-top: 686px;
+}
+
+.app h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 82%;
+    color: #000000;
+    margin-bottom: 59px;
+}
+
+.app-inner {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-content h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fa4a0c;
+    margin-bottom: 7px;
+}
+
+.app-content h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.01em;
+    max-width: 568px;
+    color: #252b42;
+    margin-bottom: 7px;
+}
+
+.app-content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+    display: inline-block;
+    max-width: 475px;
+    color: #737373;
+}
+
+/* Download */
+.dowmload {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 509px;
+    padding: 130px 0;
+}
+
+.download__content {
+    margin-bottom: 50px;
+}
+
+.download__content h2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 7px;
+}
+
+.download__content p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.download__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.download__buttons a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px 40px;
+    width: 178px;
+    height: 60px;
+}
+
+/* Footer */
+.footer {
+    width: 1440px;
+    padding: 40px 0;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__content p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #5c5c5c;
+    display: inline-block;
+}
+
+/* Adaptation for various devices */
+@media screen and (max-width: 1460px) {
+    .header__inner a {
+        transition: all 0.5s ease-in-out;
+    }
+    .header__inner a:hover {
+        color: #fa4a0c;
+    }
+    .hero__buttons a,
+    .download__buttons a {
+        transition: all 0.5s ease-in-out;
+    }
+    .hero__buttons a:hover,
+    .download__buttons a:hover {
+        background-color: #fa4a0c;
+        border: 1px solid #fa4a0c;
+    }
+    .footer__content a {
+        transition: all 0.5s ease-in-out;
+    }
+    .footer__content a:hover {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 1044px) {
+    .container {
+        max-width: 1044px;
+    }
+    .header__inner img {
+        margin-right: 420px;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .container {
+        max-width: 787px;
+    }
+    .header {
+        padding: 17px 0;
+    }
+    .header__inner img {
+        max-width: 104px;
+    }
+    .header__inner nav {
+        display: none;
+    }
+    .header__inner svg {
+        display: block;
+    }
+    .hero {
+        background: #fafafa !important;
+        height: 928px;
+    }
+    .text__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .text__content p {
+        font-size: 16px;
+        color: #737373;
+    }
+    .text__content h1 {
+        font-size: 36px;
+        line-height: 118%;
+        color: #252b42;
+        max-width: 390px;
+    }
+    .text__content h4 {
+        color: #737373;
+        max-width: 342px;
+    }
+    .hero__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+    }
+    .hero__buttons a {
+        color: #fa4a0c;
+        border: 1px solid #fa4a0c;
+    }
+    .hero img {
+        top: 525px;
+        left: 46%;
+    }
+    hr {
+        bottom: -530px;
+        max-width: 767px;
+    }
+    .app {
+        padding-top: 628px;
+        padding-bottom: 68px;
+    }
+    .app h2 {
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .app-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .app-box img {
+        position: relative;
+        left: 7%;
+        max-width: 80%;
+        overflow-x: hidden;
+    }
+    .middle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .app-content h3 {
+        max-width: 337px;
+    }
+    .app-content p {
+        max-width: 257px;
+    }
+    .dowmload {
+        background: #252B42 !important;
+        height: 624px;
+        padding: 110px 0;
+    }
+    .download__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .download__content h2 {
+        max-width: 310px;
+    }
+    .download__content p {
+        max-width: 245px;
+    }
+    .footer__logo {
+        display: none;
+    }
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .social {
+        padding: 0;
+    }
+}
