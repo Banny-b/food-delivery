@@ -1,34 +1,13 @@
-.container {
-    max-width: 1460px;
-    margin-left: auto;
-    margin-right: auto; 
-    padding: 0 10px;
-}
-
 /* Header */
-.header {
-    display: flex;
-    width: 1440px;
-    padding: 26px 0;
-}
-
 .header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__inner img {
-    margin-right: 504px;
-}
-
 .header__inner ul {
     display: flex;
     align-items: center;
-}
-
-.header__inner li:not(:last-child) {
-    margin-right: 94px;
 }
 
 .header__inner a {
@@ -46,20 +25,20 @@
 
 /* Hero */
 .hero {
-    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
-    height: 674px;
+}
+
+.hero__inner {
+    position: relative;
+    padding-bottom: 198px;
 }
 
 .text__content {
     text-align: center;
-    max-width: 960px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 42px;
-    padding-top: 73px;
 }
 
 .text__content p {
@@ -121,28 +100,18 @@
 
 hr {
     position: absolute;
-    bottom: -615px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #E4E4E4;
-    width: 884px;
     height: 3px;
 }
 
 /* App */
-.app {
-    width: 1440px;
-    padding-top: 686px;
-}
-
 .app h2 {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 44px;
-    line-height: 82%;
     color: #000000;
-    margin-bottom: 59px;
 }
 
 .app-inner {
@@ -188,12 +157,9 @@ hr {
 }
 
 /* Download */
-.dowmload {
+.download {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
-    height: 509px;
-    padding: 130px 0;
 }
 
 .download__content {
@@ -244,11 +210,6 @@ hr {
 }
 
 /* Footer */
-.footer {
-    width: 1440px;
-    padding: 40px 0;
-}
-
 .footer__content {
     display: flex;
     align-items: center;
@@ -271,48 +232,17 @@ hr {
 }
 
 /* Adaptation for various devices */
-@media screen and (max-width: 1460px) {
-    .header__inner a {
-        transition: all 0.5s ease-in-out;
-    }
-    .header__inner a:hover {
-        color: #fa4a0c;
-    }
-    .hero__buttons a,
-    .download__buttons a {
-        transition: all 0.5s ease-in-out;
-    }
-    .hero__buttons a:hover,
-    .download__buttons a:hover {
-        background-color: #fa4a0c;
-        border: 1px solid #fa4a0c;
-    }
-    .footer__content a {
-        transition: all 0.5s ease-in-out;
-    }
-    .footer__content a:hover {
-        opacity: 0.5;
-    }
-}
-
-@media screen and (max-width: 1044px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
     .container {
-        max-width: 1044px;
-    }
-    .header__inner img {
-        margin-right: 420px;
-    }
-}
-
-@media screen and (max-width: 787px) {
-    .container {
-        max-width: 787px;
+        max-width: 767px;
+        margin-left: auto;
+        margin-right: auto; 
     }
     .header {
-        padding: 17px 0;
+        padding: 16px;
     }
     .header__inner img {
-        max-width: 104px;
+        width: 104px;
     }
     .header__inner nav {
         display: none;
@@ -322,13 +252,13 @@ hr {
     }
     .hero {
         background: #fafafa !important;
-        height: 928px;
+        height: 728px;
     }
     .text__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        padding-top: 50px;
     }
     .text__content p {
         font-size: 16px;
@@ -343,6 +273,7 @@ hr {
     .text__content h4 {
         color: #737373;
         max-width: 342px;
+        margin: 0;
     }
     .hero__buttons {
         display: flex;
@@ -355,20 +286,23 @@ hr {
         border: 1px solid #fa4a0c;
     }
     .hero img {
-        top: 525px;
-        left: 46%;
+        top: 500px;
+        left: 41%;
+        width: 90%;
     }
     hr {
-        bottom: -530px;
+        bottom: -74vw;
+        width: 100%;
         max-width: 767px;
     }
     .app {
-        padding-top: 628px;
+        padding-top: 80%;
         padding-bottom: 68px;
     }
     .app h2 {
         font-size: 24px;
         line-height: 150%;
+        margin-bottom: 30px;
     }
     .app-box {
         display: flex;
@@ -393,7 +327,7 @@ hr {
     .app-content p {
         max-width: 257px;
     }
-    .dowmload {
+    .download {
         background: #252B42 !important;
         height: 624px;
         padding: 110px 0;
@@ -409,6 +343,12 @@ hr {
     .download__content p {
         max-width: 245px;
     }
+    .download__buttons {
+        flex-direction: column;
+    }
+    .footer {
+        padding: 60px 0;
+    }
     .footer__logo {
         display: none;
     }
@@ -418,5 +358,76 @@ hr {
     }
     .social {
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Tablet styles were not included in the layout. */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+    .header {
+        width: 1440px;
+        padding: 26px 82px;
+    }
+    .header__inner img {
+        margin-left: auto;
+    }
+    .header__inner li:not(:last-child) {
+        margin-right: 94px;
+    }
+    .header__inner a {
+        transition: all 0.5s ease-in-out;
+    }
+    .header__inner a:hover {
+        color: #fa4a0c;
+    }
+    .hero {
+        width: 1440px;
+        height: 674px;
+    }
+    .text__content {
+        max-width: 960px;
+        padding-top: 73px;
+    }
+    .hero__buttons a,
+    .download__buttons a {
+        transition: all 0.5s ease-in-out;
+    }
+    .hero__buttons a:hover,
+    .download__buttons a:hover {
+        background-color: #fa4a0c;
+        border: 1px solid #fa4a0c;
+    }
+    hr {
+        bottom: -615px;
+        width: 884px;
+    }
+    .app {
+        width: 1440px;
+        padding-top: 686px;
+    }
+    .app h2 {
+        font-size: 44px;
+        line-height: 82%;
+        margin-bottom: 59px;
+    }
+    .download {
+        width: 1440px;
+        height: 509px;
+        padding: 130px 0;
+    }
+    .footer {
+        width: 1440px;
+        padding: 40px 0;
+    }
+    .footer__content a {
+        transition: all 0.5s ease-in-out;
+    }
+    .footer__content a:hover {
+        opacity: 0.5;
     }
 }
